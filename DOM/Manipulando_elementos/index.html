@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulando Elementos</title>
+</head>
+<body>
+	<h1>Manipulando Elementos</h1>
+
+	<ul>
+		<li>Chá</li>
+		<li>Refri</li>
+		<li>Café</li>
+	</ul>
+
+	<div id="txt">
+		
+	</div>
+
+	<p>Teste 1</p>
+	<p>Teste 2</p>
+	<p>Teste 3</p>
+
+	<script>
+		const bebida = document.getElementsByTagName('li');
+		bebida[0].innerHTML = "teste";
+		for(b in bebida){
+			console.log(bebida);
+		  
+		}
+		document.getElementsByTagName("p")[1].innerHTML = "Ola Mundo";
+	</script>
+
+</body>
+</html>

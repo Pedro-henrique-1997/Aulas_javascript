@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos em JS 2</title>
+</head>
+<body>
+    <h2>Eventos em JS 2</h2>
+    <script src="script2.js"></script>
+
+    <input type="text" name="campo" id="meuInput" placeholder="Preencha aqui: ">
+
+    <button class="botao">Enviar</button>
+
+    <script>
+        function verificar() {
+            var campo = document.querySelector("#meuInput").value;
+            if (campo == '') {
+                alert("Veio Vazio");
+                console.log(campo);
+            } else {
+                console.log("Campo preenchido");
+                console.log(campo);
+            }
+        }
+
+        var botao = document.querySelector(".botao");
+
+        // Passar a função como referência, não executá-la imediatamente
+        botao.addEventListener("click", verificar);
+    </script>
+</body>
+</html>

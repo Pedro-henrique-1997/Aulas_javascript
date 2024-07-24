@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando Elementos</title>
+</head>
+<body>
+	<h1>Titulo 1</h1>
+    <h1>Titulo 2</h1>
+
+    <div id="txt">
+    	teste, teste teste
+    </div>
+
+    <div id="vetorID">
+    	<script>
+    		var vetor = ['txt', 'txt1', 'txt2'];
+    	</script>
+    </div>
+
+    <button class="botao">Clique</button>
+</body>
+</html>
+
+<script>
+	document.getElementById("txt");
+	document.getElementById("vetorID");
+	var btn = document.getElementsByClassName("botao");
+	console.log(btn);
+</script>

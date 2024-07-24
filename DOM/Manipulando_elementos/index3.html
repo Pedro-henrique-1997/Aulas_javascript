@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+
+	<p class="exemplo">Elemento 1</p>
+    <p class="exemplo2">Elemento 2</p>
+
+    <p id="txt">Apenas para aparecer</p> 
+
+    <button onclick="verificar()">Verificar</button>
+
+    <button onclick="mudarConteudo()">Fazer</button>
+
+<input type="" name="teste"  placeholder="aqui">
+    <script>
+    	document.querySelector(".exemplo2").style.backgroundColor = "red";
+
+    	document.querySelector(".exemplo").style.backgroundColor = "blue";
+
+    	function mudarConteudo(){
+    		var conteudo = document.querySelector("#txt").innerHTML = "Deu certo";
+    		return txt;
+    	}
+
+        function verificar(){
+            var txt = document.querySelector("input").value;
+            
+            if(txt == ""){
+                alert("veio vazio");
+            }else{
+                console.log(txt);
+            }
+        }
+    </script>
+</body>
+</html>

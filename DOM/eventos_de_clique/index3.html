@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pratica dos eventos</title>
+</head>
+<body>
+	<h1>Teste aqui seu numero se e Par ou Impar</h1>
+	<input type="number" name="numero" id="numero">
+	<button id="btn">Teste já</button>
+
+<script>
+	var botao = document.querySelector("#btn");
+
+	function verNumero(){
+		var numero = document.querySelector("#numero").value;
+		var ver = numero % 2;
+		
+		if(ver == 0){
+			alert("Par");
+		}else{
+			alert("Impar");
+		}
+	}
+
+	botao.addEventListener("click", verNumero);
+</script>
+</body>
+</html>
