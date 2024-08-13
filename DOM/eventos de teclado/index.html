@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="teste1">
+		<ul>
+			<li>Algum Item</li>
+			<li>Algum Item 2</li>
+		</ul>
+	</div>
+
+	<input type="text" placeholder="Digite algo aqui" onkeydown="apertou()" onkeypress="segurou()" onkeyup="soltou()">
+
+	<div id="teste2">
+		<ul id="ul2">
+			<li>Algum Item 3</li>
+			<li>Algum Item 4</li>
+		</ul>
+	</div>
+
+<script src="script.js">document.addEventListener("keydown", (event) => {
+    console.log("Tecla pressionada:", event.key);
+});
+</script>
+<button class="btn" onclick="clicou()">Clique aqui</button>
+<button onclick="alterarDiv2()">Edite a div 2</button>
+</body>
+</html>
